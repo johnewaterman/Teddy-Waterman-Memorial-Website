@@ -1,0 +1,368 @@
+body {
+    font-family: "source-code-pro",sans-serif !important;
+    background: #333 !important;
+    font-weight: 300 !important;
+    font-size: 14px !important;
+    color: #FFF !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+a {
+	color: #fff !important;
+	text-decoration: none;
+}
+
+/* Header Style */
+
+.main-header {
+	height: auto !important;
+	border-bottom: 0.075em solid #fff;
+}
+
+/* jslettering header */
+.char1 {
+-webkit-transform: scale(1) skewY(-16deg) !important;
+/* background: #11A8A2; */
+font-size: 46px !important;
+}
+
+.char2 {
+	-webkit-transform: scale(1) skewY(30deg);
+	/*background: #0A9E98;*/
+	/*background: #e24b3b url('http://subtlepatterns.com/patterns/green_dust_scratch.png') center top !important; */
+	font-size: 46px !important;
+}
+
+.char3 {
+-webkit-transform: scale(1) skewY(-15deg) !important;
+font-size: 46px !important;
+/*background: #11A8A2;*/
+/*background: #e24b3b url('http://subtlepatterns.com/patterns/green_dust_scratch.png') center top !important; */
+}
+
+.char4 {
+	-webkit-transform: scale(1) skewY(15deg);
+	/*background: #0A9E98;*/
+	/*background: #e24b3b url('http://subtlepatterns.com/patterns/green_dust_scratch.png') center top !important; */
+	font-size: 46px !important;
+}
+
+.char5{
+-webkit-transform: scale(1) skewY(-29deg) !important;
+font-size: 46px !important;
+/*background: #11A8A2;*/
+/*background: #e24b3b url('http://subtlepatterns.com/patterns/green_dust_scratch.png') center top !important; */
+}
+
+.char6 {
+	-webkit-transform: scale(1) skewY(15deg);
+	/*background: #0A9E98;*/
+	/*background: #e24b3b url('http://subtlepatterns.com/patterns/green_dust_scratch.png') center top !important; */
+	font-size: 46px !important;
+}
+
+.char7 {
+-webkit-transform: scale(1) skewY(-29deg) !important;
+font-size: 46px !important;
+/*background: #11A8A2;*/
+/*background: #e24b3b url('http://subtlepatterns.com/patterns/green_dust_scratch.png') center top !important; */
+}
+
+.char8 {
+	-webkit-transform: scale(1) skewY(13deg);
+	/*background: #0A9E98;*/
+	/*background: #e24b3b url('http://subtlepatterns.com/patterns/green_dust_scratch.png') center top !important; */
+	font-size: 46px !important;
+}
+
+.char9{ 
+-webkit-transform: scale(1) skewY(-15deg) !important;
+font-size: 46px !important;
+/*background: #11A8A2;*/
+/*background: #e24b3b url('http://subtlepatterns.com/patterns/green_dust_scratch.png') center top !important; */
+}
+
+.char10{
+	-webkit-transform: scale(1) skewY(29deg);
+	/*background: #0A9E98;*/
+	/*background: #e24b3b url('http://subtlepatterns.com/patterns/green_dust_scratch.png') center top !important; */
+	font-size: 46px !important;
+}
+
+.char11{
+-webkit-transform: scale(1) skewY(-16deg) !important;
+font-size: 45px !important;
+/*background: #11A8A2;*/
+/*background: #e24b3b url('http://subtlepatterns.com/patterns/green_dust_scratch.png') center top !important; */
+}
+
+.char12{
+	-webkit-transform: scale(1) skewY(15deg);
+	/*background: #0A9E98;*/
+	/*background: #e24b3b url('http://subtlepatterns.com/patterns/green_dust_scratch.png') center top !important; */
+	font-size: 46px !important;
+}
+
+.char13{
+-webkit-transform: scale(1) skewY(-13deg) !important;
+font-size: 46px !important;
+/*background: #11A8A2;*/
+/*background: #e24b3b url('http://subtlepatterns.com/patterns/green_dust_scratch.png') center top !important; */
+} 
+
+.char14{
+	-webkit-transform: scale(1) skewY(13deg);
+	/*background: #0A9E98;*/
+	/*background: #e24b3b url('http://subtlepatterns.com/patterns/green_dust_scratch.png') center top !important; */
+	font-size: 46px !important;
+}
+
+.char15{
+-webkit-transform: scale(1) skewY(-15deg) !important;
+font-size: 46px !important;
+/*background: #11A8A2;*/
+/*background: #e24b3b url('http://subtlepatterns.com/patterns/green_dust_scratch.png') center top !important; */
+}
+
+.fancy_title{
+color: #F54641 !important; 
+margin-left: 11% !important;
+font-family: "source-code-pro",sans-serif !important;
+font-weight: 100;
+text-transform: uppercase !important;
+}
+
+.fancy_title span{
+	display: inline-block !important;
+	background-size: 400% !important;
+	height: 33px !important;
+}
+
+/* END FANCY TITLE */
+
+
+/* END HEADER */
+.nav-links {
+	float:right;
+	padding-top: 17px;
+	margin-right: 110px;
+}
+.nav-links a {
+	display: inline-block;
+	font-size: 15.5px;
+	margin: 10px;
+	color: #FFF;
+	font-weight: 500;
+	border-bottom: 1px solid transparent;
+	text-transform: uppercase;
+}
+
+.nav-links a:hover {
+	border-bottom-color: #11A8A2;
+	padding-bottom: 5px;
+}
+
+/* Begin Footer */
+
+.main-footer {
+	height: auto !important;
+	border-top: 0.075em solid #fff;
+}
+
+.footer-links {
+	float:right;
+	padding-top: 17px;
+	margin-right: 110px;
+}
+.footer-links a {
+	display: inline-block;
+	font-size: 12.5px;
+	margin: 10px;
+	color: #FFF;
+	font-weight: 500;
+	border-bottom: 1px solid transparent;
+	text-transform: uppercase;
+}
+
+.footer-links a:hover {
+	border-bottom-color: #11A8A2;
+	padding-bottom: 5px;
+}
+
+.main-footer h2 {
+	font-size: 22px;
+	color: #F54641;
+	margin-left: 11%;
+}
+
+.main-footer p{
+	color: #fff;
+	font-size: 12px;
+	margin-left: 11%;
+	font-weight: 500;
+}
+
+/* END FOOTER */
+
+/* Begin Contact Form*/
+
+/*.share-story-background {
+	background: rgba(34, 34, 34, 0.75);
+	width:100%;
+}*/
+
+.share-story {
+	height: auto;
+	background: #F0F2EB;
+	/*background: url(http://subtlepatterns.com/patterns/light_grey.png);*/
+	border-top: 1px solid rgba(255, 0, 0, .05);
+}
+
+
+.story-form h1 {
+color: #F54641 !important; 
+font-family: "source-code-pro",sans-serif !important;
+font-weight: 100;
+text-transform: uppercase !important;
+}
+
+.story-form label {
+color: #333;
+font-family: "source-code-pro",sans-serif !important;
+}
+
+.story-form {
+	padding-left: 15px;
+}
+
+/* END CONTACT FORM */
+
+/* Begin Aaron's Quote*/
+.aaron-quote {
+	background: url('../images/background.jpg');
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+	/*border-top: 1px solid rgba(255, 0, 0, .5);*/
+	/*background: url('../images/magbay.png');*/
+/*	background-size: 113%;*/
+}
+
+.aaron-quote-transparent{
+	/*height:565px;*/
+	/*background: rgba(240,242,235, 0.75);*/
+	background: rgba(34, 34, 34, 0.6);
+	width:100%;
+}
+
+.aaron-quote p{
+	color: #fff;
+	font-size: 36px;
+	font-family: "source-code-pro", sans-serif;
+	margin-bottom: 60px;
+	font-weight: 100;
+	margin-top: 60px
+}
+
+/* END AARON'S QUOTE*/
+
+/* Begin Jay Quote*/
+.jay-quote {
+	/*background: url('../images/twmexcopy.png');*/
+	background-attachment: fixed;
+}
+
+.jay-quote-transparent{
+	background: rgba(240,242,235, 0.35);
+	width: 100%;
+	padding-bottom: 25px;
+	/*background: rgba(34, 34, 34, 0.9);*/
+}
+
+
+.jay-quote p{
+	color: #333;
+	font-size: 36px;
+	font-family: "source-code-pro", sans-serif;
+	margin-bottom: 60px;
+	font-weight: 100;
+	margin-top: 60px;
+}
+
+/*END JAY'S QUOTE*/
+
+/*Begin Katie's Quote*/
+.katie-quote {
+	/*background: url('../images/katie-banner.jpg');*/
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+
+	/*border-top: 1px solid rgba(255, 0, 0, .5);*/
+	/*background: url('../images/keandtw2.png');*/
+}
+
+.katie-quote-transparent{
+	/*background: rgba(240,242,235, 0.75);*/
+	background: rgba(34, 34, 34, 0.75);
+	width:100%;
+}
+
+.katie-quote p{
+	color: #fff;
+	font-size: 36px;
+	font-family: "source-code-pro", sans-serif;
+	margin-bottom: 60px;
+	margin-top: 60px;
+	font-weight: 100;
+}
+/*END KATIE'S QUOTE*/
+
+/*About Teddy Page*/
+
+.about-teddy {
+	/*background-color: #fff;*/
+	background-image: url(http://subtlepatterns.com/patterns/light_grey.png);
+	color: #333;
+	padding-top: 25px;
+}
+
+.about-teddy-photo {
+	float: left;
+	padding: 5px;
+	padding-right: 30px;
+	border-radius:15px;
+}
+
+.about-teddy-photo2 {
+	float: right;
+	padding: 5px;
+	padding-left: 5px;
+	border-radius:15px;
+}
+
+.about-source {
+	color: #333;
+	font-size: 9px;
+}
+
+
+@media (max-width: 500px) {
+  .about-teddy-photo {
+    float:none;
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-teddy-photo2 {
+    float:none;
+    padding-left: 60px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .about-teddy {
+  	text-align: center;
+  }
+}
+
