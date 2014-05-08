@@ -1630,7 +1630,7 @@ button, .button {
   padding-left: 2rem;
   font-size: 1rem;
   /*     @else                            { font-size: $padding - rem-calc(2); } */
-  background-color: #11A8A2 !important;
+  background-color: #e24b3b !important;
   border-color: #007095;
   color: white;
   -webkit-transition: background-color 300ms ease-out;
@@ -1643,7 +1643,7 @@ button, .button {
   font-size: 1rem;
   /*     @else                            { font-size: $padding - rem-calc(2); } */ }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #e24b3b !important; }
+    background-color: #333 !important; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
