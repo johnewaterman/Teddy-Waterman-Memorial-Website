@@ -1,6 +1,6 @@
 body {
     font-family: "source-code-pro",sans-serif !important;
-    background: #333 !important;
+    background: #2B2B2B !important;
     font-weight: 300 !important;
     font-size: 14px !important;
     color: #FFF !important;
@@ -317,6 +317,8 @@ font-family: "source-code-pro",sans-serif !important;
 /*	background-size: 113%;*/
 }
 
+
+
 .aaron-quote-transparent{
 	/*height:565px;*/
 	/*background: rgba(240,242,235, 0.75);*/
@@ -324,8 +326,16 @@ font-family: "source-code-pro",sans-serif !important;
 	width:100%;
 }
 
+@media (max-width: 500px) {
+  .aaron-quote {
+    background: url('../images/background3small.jpg');
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+  }
+}
+
 .aaron-quote p{
-	color: #fff;
+	color: #D4D4D4;
 	font-size: 27px;
 	font-family: "source-code-pro", sans-serif;
 	margin-bottom: 60px;
