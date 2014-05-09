@@ -23,10 +23,10 @@
         
     // default values 
     var defaults = {
-        autoplay: false,
+        autoplay: true,
         firstLoadCount: 4,
         enableKeyboardNavigation: true,
-        loop: false,
+        loop: true,
         easingMethod: 'easeOutQuint',
         height: '500px',
         width: '100%',

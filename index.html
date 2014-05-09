@@ -18,7 +18,38 @@
         <link rel="stylesheet" type="text/css" href="css/normalizelinks.css" />
         <link rel="stylesheet" type="text/css" href="css/foundation.css" />
         <link rel="stylesheet" type="text/css" href="css/foundation.min.css" />
+        <script type="text/javascript" src="jquery/lib/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="jquery/lib/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="src/jquery.scrollUp.js"></script>
   </head>
+
+  <script>
+
+        /* scrollUp Minimum setup */
+        // $(function () {
+        //  $.scrollUp();
+        // });
+
+        // scrollUp full options
+        $(function () {
+            $.scrollUp({
+                scrollName: 'scrollUp', // Element ID
+                scrollDistance: 600, // Distance from top/bottom before showing element (px)
+                scrollFrom: 'bottom', // 'top' or 'bottom'
+                scrollSpeed: 100, // Speed back to top (ms)
+                easingType: 'linear', // Scroll to top easing (see http://easings.net/)
+                animation: 'slide', // Fade, slide, none
+                animationSpeed: 50, // Animation in speed (ms)
+                scrollTrigger: false, // Set a custom triggering element. Can be an HTML string or jQuery object
+                        //scrollTarget: false, // Set a custom target element for scrolling to the top
+                scrollText: 'Scroll to top', // Text for element, can contain HTML
+                scrollTitle: false, // Set a custom <a> title if required.
+                scrollImg: true, // Set true to use image
+                activeOverlay: '#333', // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+                zIndex: 1000, // Z-Index for the overlay
+            });
+        });
+    </script>
   <!--  <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/custom.css" />
@@ -81,6 +112,7 @@
             <img data-src="images/twmex.png" </>
             <img data-src="images/twollie.png"</>
     </div>
+    <!-- <p class="slider-help"> Hint: Swipe left or right to navigate through photos </p> -->
   </div>
 
   <!-- End Slide Show -->
@@ -140,80 +172,43 @@
         </div>
     
       <div class="row">
-        <div class="large-9 large-centered medium-8 columns medium-center small-9 small-centered">
-            <form data-abide action="http://getsimpleform.com/messages?form_api_token=82dc414e0bf9e0b5beb4788b8d2e9858" method="post">
-          <div class="row">
-                  <input type='hidden' name='redirect_to' value='http://google.com' />
+        <div class="large-5 large-centered medium-8 columns medium-center small-9 small-centered">
+          <form data-abide action="http://getsimpleform.com/messages?form_api_token=82dc414e0bf9e0b5beb4788b8d2e9858" method="post">
+            <div class="row">
+              <input type='hidden' name='redirect_to' value='http://google.com' />
 
                 <div class="large-6 columns">
-                    <label>First and last name</label>
-                    <input type="text" name='domain' pattern="domain" placeholder="First and Last Name" required />
-                            <small class="error"> Don't be shy!</small>
+                  <label>Name</label>
+                    <input type="text" placeholder="Your Name Here" required />
+                      <small class="error"> Don't be shy!</small>
                 </div>
             
-                    <div class="large-6 medium-6 columns">
-                        <label>E-mail</label>
-                          <input type="email" name='email'  pattern="email" placeholder="name@gmail.com" required />
-                            <small class="error">Please use your real email address</small>
-                    </div>
+                <div class="large-6 medium-6 columns">
+                  <label>E-mail</label>
+                    <input type="email" name='email' placeholder="name@gmail.com" required />
+                      <small class="error">Please use your real email address</small>
+                </div>
 
-                    <div class="large-12 columns">
-                    <label>Share a story</label>
-                      <textarea name="Your Story" ></textarea>
+                <div class="large-12 columns">
+                  <label>Share a story</label>
+                    <textarea name="Your Story"  textarea placeholder="Your thoughts about Teddy" ></textarea>
                 </div>
           </div>
       </div>
 
-              <div class="row">
+          <div class="send-button">
+            <div class="row">
               <div class="large-2 large-centered columns small-5 small-centered">
                 <button type="submit">Submit</button>
               </div>
             </div>
-      </form>
-          </div>     
-      </div>
-    </div>
-<!-- End Share a Story Form -->
-        
-    <!-- Circular Navigation -->
-      <!-- <div class="home-anchors">
-            <ul class="ch-grid">
-              <li>
-                <div class="ch-item ch-img-1">
-                  <div class="ch-info">
-                    <a href="#about-foundation"><h3/>Photo Gallery</h3></a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="ch-item ch-img-2">
-                  <div class="ch-info">
-                    <a href="#about-teddy"><h3/> Teddy's Story</h3></a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="ch-item ch-img-3">
-                  <div class="ch-info">
-                    <a href="#submit-story"><h3>Submit a Story</h3> </a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="ch-item ch-img-4">
-                  <div class="ch-info">
-                    <a href="spred-stoke"><h3>Spread the Stoke</h3></ac
-                    <!-<a href="http://drbl.in/ekhp">Learn more </a></p>
-                  </div>
-                </div>
-              </li>
-            </ul>
           </div>
- -->
-
-
-
-
+        </form>
+      </div>     
+    </div>
+  </div>
+<!-- End Share a Story Form -->
+      
  <!-- Begin Quote Sections -->
   <div class="aaron-quote">
     <div class="aaron-quote-transparent">
@@ -226,7 +221,7 @@
 
 
 <!--   <div class="jay-quote"> -->
-    <div class="jay-quote-transparent">
+    <div class="middle-quotes-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">  
           <p>He will surf with me forever, every wave I ride will be with him and every fish that I catch will be with him, by my side, just like he always was. -<!-- <span style="color:#11A8A2"> --> Justin Reckoff <!-- </span> --></p>
@@ -236,7 +231,7 @@
  <!--  </div> -->
 
     <!-- <div class="katie-quote"> -->
-    <div class="katie-quote-transparent">
+    <div class="middle-quotes-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">
           <p>And now what I hold most dear is his fearlessness, his utter lack of pretense and intolerance for bullshit. He lived full-on, using the gifts God gave him in the water, in the classroom, in his love for his family and friends. -<!-- <span style="color:#11A8A2"> --> Katie Eastburn <!-- </span> --> </p>
@@ -244,10 +239,50 @@
       </div>
     </div>
 
-    <div class="phyllis-quote-transparent">
+    <div class="middle-quotes-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">
           <p>Within Teddy was more than all the beauty that nature could bestow. Because only the smallest part of his beauty was on the outside. The rest was inside. -<!-- <span style="color:#11A8A2"> --> Phyllis Galatas and Charlynn Barnard <!-- </span> --></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="middle-quotes-transparent">
+      <div class="row">
+        <div class="large-12 large-centered columns small-12 small-centered">
+          <p>Thanks for all the adventures, Ted. I am really glad you called that morning. - Ryan Micks </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="middle-quotes-transparent">
+      <div class="row">
+        <div class="large-12 large-centered columns small-12 small-centered">
+          <p>He was a quiet guy, very serious, and he was really driven to do well. I always thought he had the perfect last name, because he was a really excellent waterman. He was a great swimmer and surfer, an all around great athlete. - Peter Davis</p>
+        </div>
+      </div>
+    </div>
+
+     <div class="middle-quotes-transparent">
+      <div class="row">
+        <div class="large-12 large-centered columns small-12 small-centered">
+          <p>I loved this kid! He had such a huge heart. - Brett Hopkins</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="middle-quotes-transparent">
+      <div class="row">
+        <div class="large-12 large-centered columns small-12 small-centered">
+          <p>He did some phenomenal things with those kids in just six months. He would come in and ask me if I had a minute, to tell me one of his kids was reading or had accomplished something. - Terri Burchfield</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="middle-quotes-transparent">
+      <div class="row">
+        <div class="large-12 large-centered columns small-12 small-centered">
+          <p>He was blessed with a last name that encapsulated his most sntient quality - love of the water. He was endowed with remarkable physical beauty and not an ounce of canity. - Kathy Eastburn</p>
         </div>
       </div>
     </div>
@@ -259,6 +294,7 @@
         </div>
       </div>
     </div>
+
 </div>
 <!--   </div> -->
 
@@ -281,6 +317,7 @@
 
       </div>
 
+<a id="scrollUp" href="#top" title="Scroll to top" style="position: fixed; z-index: 1000; "></a>
 
     <script src="js/vendor/jquery.js"></script>
     <script>
@@ -306,76 +343,6 @@
           });
         </script>
 
-    <script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
-    <script type="text/javascript" src="js/jquery.slitslider.js"></script>
-    <script type="text/javascript"> 
-
-      $(function() {
-      
-        var Page = (function() {
-
-          var $nav = $( '#nav-dots > span' ),
-            slitslider = $( '#slider' ).slitslider( {
-              onBeforeChange : function( slide, pos ) {
-
-                $nav.removeClass( 'nav-dot-current' );
-                $nav.eq( pos ).addClass( 'nav-dot-current' );
-
-              }
-            } ),
-
-            init = function() {
-
-              initEvents();
-              
-            },
-            initEvents = function() {
-
-              $nav.each( function( i ) {
-              
-                $( this ).on( 'click', function( event ) {
-                  
-                  var $dot = $( this );
-                  
-                  if( !slitslider.isActive() ) {
-
-                    $nav.removeClass( 'nav-dot-current' );
-                    $dot.addClass( 'nav-dot-current' );
-                  
-                  }
-                  
-                  slitslider.jump( i + 1 );
-                  return false;
-                
-                } );
-                
-              } );
-
-            };
-
-            return { init : init };
-
-        })();
-
-        Page.init();
-
-        /**
-         * Notes: 
-         * 
-         * example how to add items:
-         */
-
-        /*
-        
-        var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
-        
-        // call the plugin's add method
-        ss.add($items);
-
-        */
-      
-      });
-    </script>
       
       <script src="js/jquery.easing.1.3.min.js" type="text/javascript"></script>
       <script src="js/jquery.touchSwipe.min.js" type="text/javascript"></script>
@@ -383,12 +350,15 @@
       <script src="js/jquery.scrollTo-1.4.3.1-min.js" type="text/javascript"></script>
       <script src="js/spin.min.js" type="text/javascript"></script>
       <script src="js/portfolio.js" type="text/javascript"></script>
-<script>
-    $(document).ready(function() {
-            var p = $("#gallery").portfolio();
-            p.init();
-    });
-</script>
+        
+        <script>
+               
+                $(document).ready(function() {
+                    var p = $("#gallery").portfolio({ logger: true});
+                    p.init();
+                }); // end of ready();
+
+        </script>
     
   </body>
 </html>
