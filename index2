@@ -69,9 +69,9 @@
         <!-- <div class="container demo-2"> -->
           <header class="main-header">
              <nav class="nav-links">
-                <a class="current-demo" href="#about-teddy">Ted's Story</a>
-                <a class="contact-us" href="#story-form">Share a Note</a>
-                <a class="contact-us" href="#testimonials">Words from Friends</a>
+                <a class="current-demo" href="about.html">Ted's Story</a>
+                <a class="contact-us" href="/">Share a Story</a>
+                <a class="contact-us" href="/">Spread the Stoke</a>
               </nav>
 
         
@@ -86,7 +86,6 @@
    <!-- Slide Show -->
 
   <div class="about-teddy-new">
-    <a name="photos"></a>
     <div id="gallery">
             <img data-src="images/littletw3.png" />
             <img data-src="images/littletw4.png" />
@@ -115,56 +114,10 @@
     </div>
     <!-- <p class="slider-help"> Hint: Swipe left or right to navigate through photos </p> -->
   </div>
-
   <!-- End Slide Show -->
 
-  <!-- About Teddy -->
-<!-- <div class="about-teddy">
-        <div class="row">
-            <div class="large-12 small-12">
-                <img class="about-teddy-photo" src="images/about-teddy.jpg">
-                  <p>Teddy was unusual. And by that I mean he was extraordinary.</p>
-
-                  <p>He was blessed with a last name that encapsulated his most sentient quality – love of the water. He was endowed with remarkable physical beauty and not an ounce of vanity. </p>
-
-                  <p>Teddy walked courageously through dark places. It wasn’t always easy for him to find the light, but he determinedly sought it and found it in his family, his beloved Claire, his surfing and fishing buddies, his students and colleagues, and most of all, in the waters of Galveston Bay and the world’s oceans. </p>
-
-                  <p> Teddy told my mother, his grandmother Bettye Carpenter, that he was most at peace on the water, that when he was surfing or tooling around the bay in his boat, all the chatter in his head disappeared and he was at one with the universe. It was his meditation; his prayer. </p>
-
-                  <p> From his early childhood, Teddy was one of the most complex creatures I’ve ever known. As a toddler, he had the sculpted upper body of a welterweight boxer. He knew no fear of physical challenges, then or ever, and he had the scars to prove it. His impulsiveness was legend at a tender age. </p>
-
-                  <p> He was utterly serious and committed in all his endeavors, so serious that some people didn’t understand him and missed out on getting to know him. They didn’t understand his fierceness. But those of us who loved him and understood him knew that this lion had the soul of a lamb. Teddy grew more complex and fascinating to us the longer we knew him. </p>
-
-                  <p> He muscled through college with an eye on a career as a teacher. As with every challenge in his life, he faced it directly and worked harder than ten average people to get through. Typically Teddy, he chose a tough route, dedicating himself to teaching children with a wide spectrum of profound physical and mental disabilities. He did it with flair and innovation, with loving kindness, refusing ever to leave a child behind. </p>
-
-                  <p> Teddy never overlooked anyone in need of a hand. </p>
-
-                  <p>Buddha taught that the crowning jewel of the heart and mind with which we are born, is the ability to extend love and compassion to others. In that, Teddy excelled. He didn’t always extend his love in the expected hugs and kisses, but in quiet, determined action. He cared deeply for his grandmother, Mama Bettye, checking in with her every day to see if she had everything she needed, and always including his Aunt Kim whose needs grew greater in the past couple years as she aged with Down Syndrome and Alzheimer’s disease. </p>
-
-                  <p> She asked for Teddy at dinner every night, and likely did for every day until she passed away, keeping his memory alive in her own way.</p>
-
-                  <img class="about-teddy-photo2" src="images/about-teddy2.jpg">
-
-                  <p> Teddy was a brilliant study in contrasts: He was fierce and impulsive, but utterly gentle and loyal. While he sometimes struggled to express himself verbally, he communicated so much with his generous gift of himself, through the thoughtful things he did for each of us. Teddy loved the swirling canvases of Vincent Van Gogh, and the death metal band Slayer. </p>
-
-                  <p>He was an immovable object with deep roots in the sandy soils of Galveston Island where he was born and where he lived all his life. He was born of water, and his life ended in the water – his source of contentment, his solace, his grave. </p>
-
-
-                  <p>I don’t know what I believe about rebirth, but I do believe that the spirit of the departed lives on in the lives of others and is dispersed into the universe. When I imagine Teddy’s death, I picture him catching his last wave on a glorious California afternoon, releasing his last breath, and like light, becoming both particle and wave, one with the sea. </p>
-
-                  <p> We will miss him and we will never forget him. </p>
-
-                  <p class="about-source"> By Kathryn Eastburn </p>
-            </div>
-          </div>
-        </div>
- -->
-
-  
-
   <!-- Share a Story Form -->
-  <div class="share-story-background"> 
-    <a name="story-form"></a>
+  <div class="share-story-background">
   <div class="share-story">
     <div class="story-form">
       <div class="row">
@@ -193,7 +146,7 @@
 
                 <div class="large-12 columns">
                   <label>Share a story</label>
-                    <textarea name="Your Story"  textarea placeholder="Tell us something about teddy" ></textarea>
+                    <textarea name="Your Story"  textarea placeholder="Your thoughts about Teddy" ></textarea>
                 </div>
           </div>
       </div>
@@ -213,13 +166,9 @@
       
  <!-- Begin Quote Sections -->
   <div class="aaron-quote">
-    <a name="testimonials"></a>
     <div class="aaron-quote-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">
-          <!-- <h1 class="quote-description-header"> Teddy through the eyes of those who knew him </h1> -->
-          <p class="share-a-quote"> <span italic> The following notes were shared by Teddy's friends, family, colleagues and loved ones. To share a message about Teddy, please <a href="#story-form">contact us</a> by filling out the form below. </span></p>
-          
           <p>Teddy approached life with seriousness, but he also had this wild-eyed enthusiasm for the things that he loved to do. He was like a wise old man and a kid all rolled into one. I loved Teddy, and I’m going to be different now that he is gone. But more importantly, I’m different because he lived. -<!-- <span style="color:#11A8A2"> --> Aaron Matlock<!-- </span> --></p>
         </div>
       </div>
@@ -300,14 +249,11 @@
         </div>
       </div>
     </div>
-  </div>
 
-<div class="about-teddy2">
-  <a name="about-teddy"> </a>
-    <div class="about-teddy-transparent">
+<div class="about-teddy">
         <div class="row">
             <div class="large-12 small-12">
-              <h1 class="about-teddy-header"> Teddy Waterman, July 4, 1982 — March 11, 2007 </h1>
+                <img class="about-teddy-photo" src="images/about-teddy.jpg">
                   <p>Teddy was unusual. And by that I mean he was extraordinary.</p>
 
                   <p>He was blessed with a last name that encapsulated his most sentient quality – love of the water. He was endowed with remarkable physical beauty and not an ounce of vanity. </p>
@@ -328,6 +274,8 @@
 
                   <p> She asked for Teddy at dinner every night, and likely did for every day until she passed away, keeping his memory alive in her own way.</p>
 
+                  <img class="about-teddy-photo2" src="images/about-teddy2.jpg">
+
                   <p> Teddy was a brilliant study in contrasts: He was fierce and impulsive, but utterly gentle and loyal. While he sometimes struggled to express himself verbally, he communicated so much with his generous gift of himself, through the thoughtful things he did for each of us. Teddy loved the swirling canvases of Vincent Van Gogh, and the death metal band Slayer. </p>
 
                   <p>He was an immovable object with deep roots in the sandy soils of Galveston Island where he was born and where he lived all his life. He was born of water, and his life ended in the water – his source of contentment, his solace, his grave. </p>
@@ -341,19 +289,23 @@
             </div>
           </div>
         </div>
-      </div>
+
+</div>
+<!--   </div> -->
+
   <!-- End Quotes -->
 
   <!-- Footer -->
    
       <div class="main-footer">
         <nav class="footer-links">
-          <a href="#about-teddy"> Ted's Story |</a>
-          <a class="contact-us" href="#testimonials">Words from Friends |</a>
-          <a class="contact-us" href="#share-story">Share a Note |</a>
-          <a class="contact-us" href="#photos">Photos |</a>
-          <a class="contact-us" href="www.facebook.com/itstimetx">Facebook</a>
+          <a href="about3.html"> Ted's Story |</a>
+          <a class="contact-us" href="donate.html">Photos |</a>
+          <a class="contact-us" href="www.facebook.com/j0hnwaterman">Submit a story |</a>
+          <a class="contact-us" href="www.twitter.com/itstime">Share the Stoke |</a>
+          <a class="contact-us" href="contact.html">Facebook</a>
         </nav>
+
         <h2>Live Like Teddy</h2>
         
         <p> This website was designed by the Sude Shop and is dedicated to the life of Teddy Waterman.</p>
