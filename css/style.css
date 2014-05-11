@@ -18,6 +18,7 @@ a {
 	height: 38px;  /* Height of image */
 	width: 38px; /* Width of image */
 	background: url(../images/top.png) no-repeat;
+	position: fixed;
 }
 
 @media (max-width: 500px) {
@@ -220,6 +221,9 @@ text-transform: uppercase !important;
 	border-top: 0.075em solid #fff;
 }
 
+.john-waterman-link {
+}
+
 .footer-links {
 	float:right;
 	padding-top: 17px;
@@ -290,22 +294,16 @@ text-transform: uppercase !important;
 /* END FOOTER */
 
 /* Begin Contact Form*/
-
-/*.share-story-background {
-	background: rgba(34, 34, 34, 0.75);
-	width:100%;
-}*/
-
 .share-story {
 	height: auto;
 	background: #F0F2EB;
 	/*background: url(http://subtlepatterns.com/patterns/light_grey.png);*/
-	border-top: 1px solid rgba(255, 0, 0, .05);
+	border-top: solid #fff 1px;
 }
 
 
 .story-form h1 {
-color: #F54641 !important; 
+color: #2B2B2B  !important; 
 font-family: "source-code-pro",sans-serif !important;
 font-weight: 100;
 text-transform: uppercase !important;
@@ -329,21 +327,10 @@ font-family: "source-code-pro",sans-serif !important;
 	background: url('../images/background3.jpg');
 	background-attachment: fixed;
 	background-repeat:no-repeat;
+	border-bottom: solid #F54641 1px;
+	border-top: solid #F54641 1px;
 }
-	/*border-top: 1px solid rgba(255, 0, 0, .5);
-	/*background: url('../images/magbay.png');*/
-
-
-/*.quote-description-header {
-	font-family: "source-code-pro", sans-serif;
-	font-weight: 100;
-	/*color: #F54641;*/
-	/*color: #fff;
-	font-size: 28px;
-	text-decoration: underline;
-}
-*/
-
+	
 .share-a-quote {
 	color:#a8a8a8 !important;
 	font-size: 23px !important;
@@ -384,49 +371,12 @@ font-family: "source-code-pro",sans-serif !important;
 
 /* END AARON'S QUOTE*/
 
-/* Begin Jay Quote*/
-.jay-quote {
-	/*background: url('../images/twmexcopy.png');*/
-	background-attachment: fixed;
-}
 
-.jay-quote-transparent{
-	/*background: rgba(240,242,235, 0.35);*/
-	width: 100%;
-	padding-bottom: 25px;
-	background: rgba(34, 34, 34, 0.45);
-}
-
-/*END JAY'S QUOTE*/
-
-/*Begin Katie's Quote*/
-.katie-quote {
-	/*background: url('../images/katie-banner.jpg');*/
-	background-attachment: fixed;
-	background-repeat:no-repeat;
-
-	/*border-top: 1px solid rgba(255, 0, 0, .5);*/
-	/*background: url('../images/keandtw2.png');*/
-}
-
-.katie-quote-transparent{
-	/*background: rgba(240,242,235, 0.75);*/
-	background: rgba(34, 34, 34, 0.45);
-	width:100%;
-}
-
-
-/*END KATIE'S QUOTE*/
-
-/*Begin Phyllis's Quote*/
 .middle-quotes-transparent{
 	/*background: rgba(240,242,235, 0.35);*/
 	width: 100%;
-	padding-bottom: 25px;
 	background: rgba(34, 34, 34, 0.45);
 }
-
-/*END PHYLLIS QUOTE*/
 
 /*Begin Kris's Quote*/
 .kris-quote-transparent{
@@ -436,56 +386,6 @@ font-family: "source-code-pro",sans-serif !important;
 	padding-bottom: 100px;
 }
 /*END KRIS QUOTE*/
-
-/*About Teddy Page*/
-
-/*.about-teddy {*/
-	/*background-color: #fff;*/
-	/*background-image: url(http://subtlepatterns.com/patterns/light_grey.png);
-	color: #333;
-	padding-top: 25px;
-}*/
-
-/*.about-teddy-photo {
-	float: left;
-	padding: 5px;
-	padding-right: 30px;
-	border-radius:15px;
-}*/
-
-/*.about-teddy-photo2 {
-	float: right;
-	padding: 5px;
-	padding-left: 5px;
-	border-radius:15px;
-}*/
-
-/*.about-source {
-	color: #333;
-	font-size: 9px;
-}*/
-
-
-/*@media (max-width: 500px) {
-  .about-teddy-photo {
-    float:none;
-    padding-left: 60px;
-  }
-}*/
-
-/*@media (max-width: 500px) {
-  .about-teddy-photo2 {
-    float:none;
-    padding-left: 60px;
-  }*/
-
-
-
-/*@media (max-width: 500px) {
-  .about-teddy {
-  	text-align: center;
-  }
-}*/
 
 /*About Teddy Alternative Page*/
 .about-teddy-header {
@@ -560,6 +460,13 @@ font-family: "source-code-pro",sans-serif !important;
 	font-size: 15px !important;
 }
 
+.about-source a{
+	color:#333 !important;
+}
+
+.about-source a:hover {
+	color:#D4D4D4 !important;
+}
 
 
 

@@ -1623,7 +1623,7 @@ button, .button {
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 5px;
   padding-top: 15px !important; 
   padding-right: 25px !important;
   padding-bottom: 15px !important;
