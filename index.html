@@ -18,39 +18,11 @@
         <link rel="stylesheet" type="text/css" href="css/normalizelinks.css" />
         <link rel="stylesheet" type="text/css" href="css/foundation.css" />
         <link rel="stylesheet" type="text/css" href="css/foundation.min.css" />
-        <script type="text/javascript" src="jquery/lib/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="jquery/lib/jquery.easing.min.js"></script>
-        <script type="text/javascript" src="src/jquery.scrollUp.js"></script>
+        <script type="text/javascript" src="jquery/jquery.scrollUp.js"></script>
   </head>
 
-  <script>
-
-        /* scrollUp Minimum setup */
-        // $(function () {
-        //  $.scrollUp();
-        // });
-
-        // scrollUp full options
-        $(function () {
-            $.scrollUp({
-                scrollName: 'scrollUp', // Element ID
-                scrollDistance: 600, // Distance from top/bottom before showing element (px)
-                scrollFrom: 'bottom', // 'top' or 'bottom'
-                scrollSpeed: 100, // Speed back to top (ms)
-                easingType: 'linear', // Scroll to top easing (see http://easings.net/)
-                animation: 'slide', // Fade, slide, none
-                animationSpeed: 50, // Animation in speed (ms)
-                scrollTrigger: false, // Set a custom triggering element. Can be an HTML string or jQuery object
-                        //scrollTarget: false, // Set a custom target element for scrolling to the top
-                scrollText: 'Scroll to top', // Text for element, can contain HTML
-                scrollTitle: false, // Set a custom <a> title if required.
-                scrollImg: true, // Set true to use image
-                activeOverlay: '#333', // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-                zIndex: 1000, // Z-Index for the overlay
-            });
-        });
-    </script>
-  <!--  <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/custom.css" />
 
@@ -63,6 +35,34 @@
     </noscript>
 
     </head>
+<script>
+
+    /* scrollUp Minimum setup */
+    // $(function () {
+    //  $.scrollUp();
+    // });
+
+    // scrollUp full options
+    $(function () {
+      $.scrollUp({
+            scrollName: 'scrollUp', // Element ID
+            scrollDistance: 2000, // Distance from top/bottom before showing element (px)
+            scrollFrom: 'top', // 'top' or 'bottom'
+            scrollSpeed: 300, // Speed back to top (ms)
+            easingType: 'linear', // Scroll to top easing (see http://easings.net/)
+            animation: 'fade', // Fade, slide, none
+            animationSpeed: 200, // Animation in speed (ms)
+            scrollTrigger: false, // Set a custom triggering element. Can be an HTML string or jQuery object
+            //scrollTarget: false, // Set a custom target element for scrolling to the top
+            scrollText: 'Scroll to top', // Text for element, can contain HTML
+            scrollTitle: false, // Set a custom <a> title if required.
+            scrollImg: false, // Set true to use image
+            activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+            zIndex: 1000 // Z-Index for the overlay
+      });
+    });
+  </script>
+
     <body>
        
        <!-- Header -->
@@ -117,51 +117,7 @@
   </div>
 
   <!-- End Slide Show -->
-
-  <!-- About Teddy -->
-<!-- <div class="about-teddy">
-        <div class="row">
-            <div class="large-12 small-12">
-                <img class="about-teddy-photo" src="images/about-teddy.jpg">
-                  <p>Teddy was unusual. And by that I mean he was extraordinary.</p>
-
-                  <p>He was blessed with a last name that encapsulated his most sentient quality – love of the water. He was endowed with remarkable physical beauty and not an ounce of vanity. </p>
-
-                  <p>Teddy walked courageously through dark places. It wasn’t always easy for him to find the light, but he determinedly sought it and found it in his family, his beloved Claire, his surfing and fishing buddies, his students and colleagues, and most of all, in the waters of Galveston Bay and the world’s oceans. </p>
-
-                  <p> Teddy told my mother, his grandmother Bettye Carpenter, that he was most at peace on the water, that when he was surfing or tooling around the bay in his boat, all the chatter in his head disappeared and he was at one with the universe. It was his meditation; his prayer. </p>
-
-                  <p> From his early childhood, Teddy was one of the most complex creatures I’ve ever known. As a toddler, he had the sculpted upper body of a welterweight boxer. He knew no fear of physical challenges, then or ever, and he had the scars to prove it. His impulsiveness was legend at a tender age. </p>
-
-                  <p> He was utterly serious and committed in all his endeavors, so serious that some people didn’t understand him and missed out on getting to know him. They didn’t understand his fierceness. But those of us who loved him and understood him knew that this lion had the soul of a lamb. Teddy grew more complex and fascinating to us the longer we knew him. </p>
-
-                  <p> He muscled through college with an eye on a career as a teacher. As with every challenge in his life, he faced it directly and worked harder than ten average people to get through. Typically Teddy, he chose a tough route, dedicating himself to teaching children with a wide spectrum of profound physical and mental disabilities. He did it with flair and innovation, with loving kindness, refusing ever to leave a child behind. </p>
-
-                  <p> Teddy never overlooked anyone in need of a hand. </p>
-
-                  <p>Buddha taught that the crowning jewel of the heart and mind with which we are born, is the ability to extend love and compassion to others. In that, Teddy excelled. He didn’t always extend his love in the expected hugs and kisses, but in quiet, determined action. He cared deeply for his grandmother, Mama Bettye, checking in with her every day to see if she had everything she needed, and always including his Aunt Kim whose needs grew greater in the past couple years as she aged with Down Syndrome and Alzheimer’s disease. </p>
-
-                  <p> She asked for Teddy at dinner every night, and likely did for every day until she passed away, keeping his memory alive in her own way.</p>
-
-                  <img class="about-teddy-photo2" src="images/about-teddy2.jpg">
-
-                  <p> Teddy was a brilliant study in contrasts: He was fierce and impulsive, but utterly gentle and loyal. While he sometimes struggled to express himself verbally, he communicated so much with his generous gift of himself, through the thoughtful things he did for each of us. Teddy loved the swirling canvases of Vincent Van Gogh, and the death metal band Slayer. </p>
-
-                  <p>He was an immovable object with deep roots in the sandy soils of Galveston Island where he was born and where he lived all his life. He was born of water, and his life ended in the water – his source of contentment, his solace, his grave. </p>
-
-
-                  <p>I don’t know what I believe about rebirth, but I do believe that the spirit of the departed lives on in the lives of others and is dispersed into the universe. When I imagine Teddy’s death, I picture him catching his last wave on a glorious California afternoon, releasing his last breath, and like light, becoming both particle and wave, one with the sea. </p>
-
-                  <p> We will miss him and we will never forget him. </p>
-
-                  <p class="about-source"> By Kathryn Eastburn </p>
-            </div>
-          </div>
-        </div>
- -->
-
   
-
   <!-- Share a Story Form -->
   <div class="share-story-background"> 
     <a name="story-form"></a>
@@ -360,8 +316,6 @@
 
       </div>
 
-<a id="scrollUp" href="#top" title="Scroll to top" style="position: fixed; z-index: 1000; "></a>
-
     <script src="js/vendor/jquery.js"></script>
     <script>
       $(document).foundation();
@@ -402,6 +356,7 @@
                 }); // end of ready();
 
         </script>
-    
+
+        <a id="scrollUp" href="#top" title="Scroll to top" style="position: fixed; z-index: 1000;"></a>
   </body>
 </html>

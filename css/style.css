@@ -397,10 +397,6 @@ font-family: "source-code-pro",sans-serif !important;
 	background: rgba(34, 34, 34, 0.45);
 }
 
-/*.jay-quote-transparent p{
-	color:black;
-}*/
-
 /*END JAY'S QUOTE*/
 
 /*Begin Katie's Quote*/
@@ -430,10 +426,6 @@ font-family: "source-code-pro",sans-serif !important;
 	background: rgba(34, 34, 34, 0.45);
 }
 
-/*.phyllis-quote-transparent p {
-	color: black;
-}*/
-
 /*END PHYLLIS QUOTE*/
 
 /*Begin Kris's Quote*/
@@ -445,58 +437,55 @@ font-family: "source-code-pro",sans-serif !important;
 }
 /*END KRIS QUOTE*/
 
-
-
-
 /*About Teddy Page*/
 
-.about-teddy {
+/*.about-teddy {*/
 	/*background-color: #fff;*/
-	background-image: url(http://subtlepatterns.com/patterns/light_grey.png);
+	/*background-image: url(http://subtlepatterns.com/patterns/light_grey.png);
 	color: #333;
 	padding-top: 25px;
-}
+}*/
 
-.about-teddy-photo {
+/*.about-teddy-photo {
 	float: left;
 	padding: 5px;
 	padding-right: 30px;
 	border-radius:15px;
-}
+}*/
 
-.about-teddy-photo2 {
+/*.about-teddy-photo2 {
 	float: right;
 	padding: 5px;
 	padding-left: 5px;
 	border-radius:15px;
-}
+}*/
 
-.about-source {
+/*.about-source {
 	color: #333;
 	font-size: 9px;
-}
+}*/
 
 
-@media (max-width: 500px) {
+/*@media (max-width: 500px) {
   .about-teddy-photo {
     float:none;
     padding-left: 60px;
   }
-}
+}*/
 
-@media (max-width: 500px) {
+/*@media (max-width: 500px) {
   .about-teddy-photo2 {
     float:none;
     padding-left: 60px;
-  }
-}
+  }*/
 
 
-@media (max-width: 500px) {
+
+/*@media (max-width: 500px) {
   .about-teddy {
   	text-align: center;
   }
-}
+}*/
 
 /*About Teddy Alternative Page*/
 .about-teddy-header {
@@ -508,10 +497,32 @@ font-family: "source-code-pro",sans-serif !important;
 	text-decoration: underline;
 }
 
+@media (max-width: 500px) {
+	.about-teddy-header {
+	font-family: "source-code-pro", sans-serif;
+	font-weight: 100;
+	/*color: #F54641;*/
+	color: #2B2B2B;
+	font-size: 28px;
+	text-decoration: underline;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+}
+
 .about-teddy2 {
 	background: url('../images/background5.jpg');
 	background-attachment: fixed;
 	background-repeat:no-repeat;
+}
+
+@media (max-width: 500px) {
+	.about-teddy2 {
+		background: url('../images/about-background-small.jpg');
+		background-attachment: fixed;
+		background-repeat:no-repeat;
+	}
 }
 
 .about-teddy-transparent{
@@ -531,8 +542,24 @@ font-family: "source-code-pro",sans-serif !important;
 	font-weight: 100;
 }
 
+@media (max-width: 500px) {
+	.about-teddy2 p{
+	color: #333!important;
+	padding-top: 25px;
+	color: #D4D4D4;
+	font-size: 25px;
+	font-family: "source-code-pro", sans-serif;
+	font-weight: 100;
+	text-align: left;
+	padding-left:15px;
+	padding-right: 15px;
+}
+}
+
 .about-source {
 	font-size: 15px !important;
 }
+
+
 
 
