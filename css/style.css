@@ -360,9 +360,10 @@ font-family: "source-code-pro",sans-serif !important;
 }
 
 .aaron-quote img{
+	float:right;
 	border-radius: 50px;
-	width:18%;
-	padding-right:5px;
+	width: 21%;
+	margin-left: -31px;
 }
 
 
