@@ -489,5 +489,14 @@ font-family: "source-code-pro",sans-serif !important;
 	color:#D4D4D4 !important;
 }
 
-
+.top a {
+	float:right;
+	font-size: 15.5px;
+	margin-bottom: 20px;
+	color: #333!important;
+	font-weight: 500;
+	border-bottom: 1px solid transparent;
+	text-transform: uppercase;
+	margin-right: -86px;
+}
 
