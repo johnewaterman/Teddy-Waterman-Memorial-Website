@@ -18,9 +18,8 @@
         <link rel="stylesheet" type="text/css" href="css/normalizelinks.css" />
         <link rel="stylesheet" type="text/css" href="css/foundation.css" />
         <link rel="stylesheet" type="text/css" href="css/foundation.min.css" />
-        <script type="text/javascript" src="js/lib/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="jquery/lib/jquery.easing.min.js"></script>
-        <script type="text/javascript" src="jquery/jquery.scrollUp.js"></script>
   </head>
 
         <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -34,44 +33,43 @@
     <link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
     </noscript>
 
-    </head>
 <script>
+    <!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
 
-    /* scrollUp Minimum setup */
-    // $(function () {
-    //  $.scrollUp();
-    // });
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
 
-    // scrollUp full options
-    $(function () {
-      $.scrollUp({
-            scrollName: 'scrollUp', // Element ID
-            scrollDistance: 2000, // Distance from top/bottom before showing element (px)
-            scrollFrom: 'top', // 'top' or 'bottom'
-            scrollSpeed: 300, // Speed back to top (ms)
-            easingType: 'linear', // Scroll to top easing (see http://easings.net/)
-            animation: 'fade', // Fade, slide, none
-            animationSpeed: 200, // Animation in speed (ms)
-            scrollTrigger: false, // Set a custom triggering element. Can be an HTML string or jQuery object
-            //scrollTarget: false, // Set a custom target element for scrolling to the top
-            scrollText: 'Scroll to top', // Text for element, can contain HTML
-            scrollTitle: false, // Set a custom <a> title if required.
-            scrollImg: false, // Set true to use image
-            activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-            zIndex: 1000 // Z-Index for the overlay
-      });
-    });
-  </script>
+});
+</script>
 
+    </head>
     <body>
        
        <!-- Header -->
         <!-- <div class="container demo-2"> -->
+         <div id="photos"></div>
           <header class="main-header">
              <nav class="nav-links">
-                <a class="current-demo" href="#about-teddy">Ted's Story</a>
                 <a class="contact-us" href="#story-form">Share a Note</a>
                 <a class="contact-us" href="#testimonials">Words from Friends</a>
+                <a class="current-demo" href="#about-teddy">Ted's Story</a>
               </nav>
 
         
@@ -86,7 +84,6 @@
    <!-- Slide Show -->
 
   <div class="about-teddy-new">
-    <a name="photos"></a>
     <div id="gallery">
             <img data-src="images/littletw3.png" />
             <img data-src="images/littletw4.png" />
@@ -120,7 +117,6 @@
   
   <!-- Share a Story Form -->
   <div class="share-story-background"> 
-    <a name="story-form"></a>
   <div class="share-story">
     <div class="story-form">
       <div class="row">
@@ -165,38 +161,39 @@
       </div>     
     </div>
   </div>
+<div id="story-form"><div>
 <!-- End Share a Story Form -->
       
  <!-- Begin Quote Sections -->
   <div class="aaron-quote">
-    <a name="testimonials"></a>
     <div class="aaron-quote-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">
           <!-- <h1 class="quote-description-header"> Teddy through the eyes of those who knew him </h1> -->
-          <p class="share-a-quote"> <span italic> The following notes were shared by Teddy's friends, family, colleagues and loved ones. To share a message about Teddy, please <a href="#story-form">contact us</a> by filling out the form below. </span></p>
+          <p class="share-a-quote"> <span italic> The following notes were shared by Teddy's friends, family, colleagues and loved ones. To share a message about Teddy, please <a href="#story-form">contact us</a> by filling out the form above. </span></p>
           
-          <p>Teddy approached life with seriousness, but he also had this wild-eyed enthusiasm for the things that he loved to do. He was like a wise old man and a kid all rolled into one. I loved Teddy, and I’m going to be different now that he is gone. But more importantly, I’m different because he lived. -<!-- <span style="color:#11A8A2"> --> Aaron Matlock<!-- </span> --></p>
+          <p>Teddy approached life with seriousness, but he also had this wild-eyed enthusiasm for the things that he loved to do. He was like a wise old man and a kid all rolled into one. I loved Teddy, and I’m going to be different now that he is gone. But more importantly, I’m different because he lived.</p> <p class="quote-credit">Aaron Matlock <img src="images/aaron-hs.jpg"> </p>
         </div>
       </div>
     </div>
-
 
 <!--   <div class="jay-quote"> -->
     <div class="middle-quotes-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">  
-          <p>He will surf with me forever, every wave I ride will be with him and every fish that I catch will be with him, by my side, just like he always was. -<!-- <span style="color:#11A8A2"> --> Justin Reckoff <!-- </span> --></p>
+          <div id="testimonials"></div>
+          <p>He will surf with me forever, every wave I ride will be with him and every fish that I catch will be with him, by my side, just like he always was.</p> <p class="quote-credit">Jay Reckoff <img src="images/jay-hs.jpg"> </p>
         </div>
       </div>
     </div>
+
  <!--  </div> -->
 
     <!-- <div class="katie-quote"> -->
     <div class="middle-quotes-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">
-          <p>And now what I hold most dear is his fearlessness, his utter lack of pretense and intolerance for bullshit. He lived full-on, using the gifts God gave him in the water, in the classroom, in his love for his family and friends. -<!-- <span style="color:#11A8A2"> --> Katie Eastburn <!-- </span> --> </p>
+          <p>And now what I hold most dear is his fearlessness, his utter lack of pretense and intolerance for bullshit. He lived full-on, using the gifts God gave him in the water, in the classroom, in his love for his family and friends.</p> <p class="quote-credit">Katie Eastburn <img src="images/katie-hs.jpg"> </p>
         </div>
       </div>
     </div>
@@ -204,7 +201,7 @@
     <div class="middle-quotes-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">
-          <p>Within Teddy was more than all the beauty that nature could bestow. Because only the smallest part of his beauty was on the outside. The rest was inside. -<!-- <span style="color:#11A8A2"> --> Phyllis Galatas and Charlynn Barnard <!-- </span> --></p>
+          <p>Within Teddy was more than all the beauty that nature could bestow. Because only the smallest part of his beauty was on the outside. The rest was inside. </p> <p class="quote-credit">Phyllis Galatas and Charlynn Barnard</p>
         </div>
       </div>
     </div>
@@ -212,7 +209,7 @@
     <div class="middle-quotes-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">
-          <p>Thanks for all the adventures, Ted. I am really glad you called that morning. - Ryan Micks </p>
+          <p>Thanks for all the adventures, Ted. I am really glad you called that morning.</p> <p class="quote-credit">Ryan Micks</p>
         </div>
       </div>
     </div>
@@ -220,7 +217,7 @@
     <div class="middle-quotes-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">
-          <p>He was a quiet guy, very serious, and he was really driven to do well. I always thought he had the perfect last name, because he was a really excellent waterman. He was a great swimmer and surfer, an all around great athlete. - Peter Davis</p>
+          <p>He was a quiet guy, very serious, and he was really driven to do well. I always thought he had the perfect last name, because he was a really excellent waterman. He was a great swimmer and surfer, an all around great athlete. </p> <p class="quote-credit">Peter Davis <img src="images/peter-hs.jpg"> </p>
         </div>
       </div>
     </div>
@@ -228,7 +225,7 @@
      <div class="middle-quotes-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">
-          <p>I loved this kid! He had such a huge heart. - Brett Hopkins</p>
+          <p>I loved this kid! He had such a huge heart.</p> <p class="quote-credit">Brett Hopkins <img src="images/brett-hs.jpg"> </p>
         </div>
       </div>
     </div>
@@ -236,7 +233,7 @@
     <div class="middle-quotes-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">
-          <p>He did some phenomenal things with those kids in just six months. He would come in and ask me if I had a minute, to tell me one of his kids was reading or had accomplished something. - Terri Burchfield</p>
+          <p>He did some phenomenal things with those kids in just six months. He would come in and ask me if I had a minute, to tell me one of his kids was reading or had accomplished something. </p> <p class="quote-credit">Terri Burchfield </p>
         </div>
       </div>
     </div>
@@ -244,7 +241,7 @@
     <div class="middle-quotes-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">
-          <p>He was blessed with a last name that encapsulated his most sntient quality - love of the water. He was endowed with remarkable physical beauty and not an ounce of canity. - Kathy Eastburn</p>
+          <p>He was blessed with a last name that encapsulated his most sntient quality - love of the water. He was endowed with remarkable physical beauty and not an ounce of canity.</p> <p class="quote-credit">Kathyrn Eastburn <img src="images/kathy-hs.jpg"> </p>
         </div>
       </div>
     </div>
@@ -252,7 +249,7 @@
      <div class="middle-quotes-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">
-          <p>Teddy was a remarkable big brother and is my hero. He taught me what it means to live and to love. I think about him everyday, and his spirit will live with me forever.- John Waterman </p>
+          <p>Teddy was a remarkable big brother and is my hero. He taught me what it means to live and to love. I think about him everyday, and his spirit will live with me forever.</p> <p class="quote-credit">John Waterman <img src="images/john-hs2.jpg"></p>
         </div>
       </div>
     </div>
@@ -260,7 +257,7 @@
     <div class="kris-quote-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">
-          <p>I loved it when he danced, it was all upper body with his back hunched and arms moving. His knees didn’t bend or move much. I lived to see that guy dance! - Kris Hopkins </p>
+          <p>I loved it when he danced, it was all upper body with his back hunched and arms moving. His knees didn’t bend or move much. I lived to see that guy dance!</p> <p class="quote-credit"> Kris Hopkins <img src="images/kris-hs.jpg"> </p>
         </div>
       </div>
     </div>
@@ -277,6 +274,7 @@
                   <p>He was blessed with a last name that encapsulated his most sentient quality – love of the water. He was endowed with remarkable physical beauty and not an ounce of vanity. </p>
 
                   <p>Teddy walked courageously through dark places. It wasn’t always easy for him to find the light, but he determinedly sought it and found it in his family, his beloved Claire, his surfing and fishing buddies, his students and colleagues, and most of all, in the waters of Galveston Bay and the world’s oceans. </p>
+                  <div id="about-teddy"></div>
 
                   <p> Teddy told my mother, his grandmother Bettye Carpenter, that he was most at peace on the water, that when he was surfing or tooling around the bay in his boat, all the chatter in his head disappeared and he was at one with the universe. It was his meditation; his prayer. </p>
 
@@ -312,10 +310,10 @@
    
       <div class="main-footer">
         <nav class="footer-links">
-          <a href="#about-teddy"> Ted's Story |</a>
-          <a class="contact-us" href="#testimonials">Words from Friends |</a>
-          <a class="contact-us" href="#share-story">Share a Note |</a>
           <a class="contact-us" href="#photos">Photos |</a>
+          <a class="contact-us" href="#share-story">Share a Note |</a>
+          <a class="contact-us" href="#testimonials">Words from Friends |</a>
+          <a href="#about-teddy"> Ted's Story |</a>
           <a class="contact-us" href="www.facebook.com/itstimetx">Facebook</a>
         </nav>
         <h2>Live Like Teddy</h2>
@@ -352,7 +350,6 @@
       <script src="js/jquery.easing.1.3.min.js" type="text/javascript"></script>
       <script src="js/jquery.touchSwipe.min.js" type="text/javascript"></script>
       <script src="js/jquery.imagesloaded.min.js" type="text/javascript"></script>
-      <script src="js/jquery.scrollTo-1.4.3.1-min.js" type="text/javascript"></script>
       <script src="js/spin.min.js" type="text/javascript"></script>
       <script src="js/portfolio.js" type="text/javascript"></script>
         
@@ -364,7 +361,5 @@
                 }); // end of ready();
 
         </script>
-
-        <a id="scrollUp" href="#top" title="Scroll to top" style="position: fixed; z-index: 1000;"></a>
   </body>
 </html>

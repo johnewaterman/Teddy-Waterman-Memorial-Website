@@ -21,6 +21,13 @@ a {
 	position: fixed;
 }
 
+#scrollUp {
+	  -webkit-transition: color .4s ease-in-out;
+    -moz-transition: color .4s ease-in-out;
+    -o-transition: color .4s ease-in-out;
+    transition: color .4s ease-in-out;
+}
+
 @media (max-width: 500px) {
   #scrollUp{
     bottom: 60px;
@@ -341,7 +348,7 @@ font-family: "source-code-pro",sans-serif !important;
 }
 
 .share-a-quote a{
-	color: #F54641 !important;
+	color:  #11A8A2 !important;
 }
 
 .aaron-quote-transparent{
@@ -351,6 +358,13 @@ font-family: "source-code-pro",sans-serif !important;
 	width:100%;
 	padding-top: 100px;
 }
+
+.aaron-quote img{
+	border-radius: 50px;
+	width:18%;
+	padding-right:5px;
+}
+
 
 @media (max-width: 500px) {
   .aaron-quote {
@@ -366,9 +380,16 @@ font-family: "source-code-pro",sans-serif !important;
 	font-family: "source-code-pro", sans-serif;
 	margin-bottom: 60px;
 	font-weight: 100;
-	margin-top: 60px
+	margin-top: 60px;
 }
 
+
+.quote-credit{
+	float:right;
+	font-size: 24px !important;
+	margin-top: -50px!important;
+	color: #D4D4D4 !important;
+}
 /* END AARON'S QUOTE*/
 
 
