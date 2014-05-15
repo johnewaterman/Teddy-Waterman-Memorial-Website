@@ -165,7 +165,7 @@ text-transform: uppercase !important;
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   .fancy_title {
     color: #F54641 !important; 
 	margin-left: 4% !important;
