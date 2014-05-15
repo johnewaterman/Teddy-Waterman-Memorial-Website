@@ -366,15 +366,6 @@ font-family: "source-code-pro",sans-serif !important;
 	margin-left: -31px;
 }
 
-
-@media (max-width: 500px) {
-  .aaron-quote {
-    background: url('../images/background3small.jpg');
-	background-attachment: fixed;
-	background-repeat:no-repeat;
-  }
-}
-
 @media (max-width: 500px) {
 	.aaron-quote-transparent{
 	/*height:565px;*/
@@ -383,6 +374,14 @@ font-family: "source-code-pro",sans-serif !important;
 	width:100%;
 	padding-top: 100px;
 	}
+}
+
+@media (max-width: 500px) {
+  .aaron-quote {
+    background: url('../images/background3small.jpg');
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+  }
 }
 
 
