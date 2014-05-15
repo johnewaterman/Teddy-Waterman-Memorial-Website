@@ -375,6 +375,17 @@ font-family: "source-code-pro",sans-serif !important;
   }
 }
 
+@media (max-width: 500px) {
+	.aaron-quote-transparent{
+	/*height:565px;*/
+	/*background: rgba(240,242,235, 0.75);*/
+	background: rgba(34, 34, 34, 0.45);
+	width:100%;
+	padding-top: 100px;
+	}
+}
+
+
 .aaron-quote p{
 	color: #D4D4D4;
 	font-size: 27px;
