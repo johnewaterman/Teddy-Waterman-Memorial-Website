@@ -150,8 +150,8 @@ font-size: 46px !important;
 }
 
 .fancy_title{
-color: #F54641 !important; 
-margin-left: 11% !important;
+color: #F54641; 
+margin-left: 11%;
 font-family: "source-code-pro",sans-serif !important;
 font-weight: 100;
 text-transform: uppercase !important;
@@ -165,7 +165,7 @@ text-transform: uppercase !important;
 
 
 
-@media (max-device-width : 480px) {
+@media (max-width: 500px) {
   .fancy_title {
     color: #F54641 !important; 
 	margin-left: 4% !important;
@@ -511,3 +511,15 @@ font-family: "source-code-pro",sans-serif !important;
 	margin-right: -86px;
 }
 
+
+@media (max-width: 500px) {
+.top a {
+	float:right;
+	font-size: 15.5px;
+	margin-bottom: 20px;
+	color: #333!important;
+	font-weight: 500;
+	border-bottom: 1px solid transparent;
+	text-transform: uppercase;
+	margin-right: 0px;
+}
