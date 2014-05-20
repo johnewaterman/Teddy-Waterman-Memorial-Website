@@ -8,7 +8,7 @@
         <meta name="description" content="Fullscreen Slit Slider with CSS3 and jQuery" />
         <meta name="keywords" content="slit slider, plugin, css3, transitions, jquery, fullscreen, autoplay" />
         <meta name="author" content="Codrops" />
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="images/favicon2.ico" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/icons.css" />
@@ -63,23 +63,36 @@ $(document).ready(function() {
     </head>
     <body>
        
+
+<script>
+$(function() {
+  $('nav-links a[href^="#' + location.pathname.split("#")[1] + '"]').addClass('active');
+});
+</script>
        <!-- Header -->
         <!-- <div class="container demo-2"> -->
         <div id="top"></div>
          <div id="photos"></div>
           <header class="main-header">
              <nav class="nav-links">
-                <a class="contact-us" href="#story-form">Share a Note</a>
-                <a class="contact-us" href="#testimonials">Words from Friends</a>
-                <a class="current-demo" href="#about-teddy">Ted's Story</a>
+                <a href="#story-form">Share a Note</a>
+                <a href="#testimonials">Words from Friends</a>
+                <a href="#about-teddy">Ted's Story</a>
               </nav>
 
+<div class="logo"><img src="images/twlogo.png">
+</div>
+
+<div class="tagline"> Dedicated to the Memory of Teddy Waterman 
+</div>
         
-            <div class="fancy-title-div">
+            <!-- <div class="fancy-title-div">
               <a href="index.html"><h1 class="fancy_title">Live.Like.Teddy</h1></a>
-            </div>
-        
+            </div> -->
+      
+
         </header>
+
 
    <!-- End Header -->
 
@@ -173,6 +186,7 @@ $(document).ready(function() {
 <!-- End Share a Story Form -->
       
  <!-- Begin Quote Sections -->
+<div id="testimonials"></div>
   <div class="aaron-quote">
     <div class="aaron-quote-transparent">
       <div class="row">
@@ -189,7 +203,7 @@ $(document).ready(function() {
     <div class="middle-quotes-transparent">
       <div class="row">
         <div class="large-12 large-centered columns small-12 small-centered">  
-          <div id="testimonials"></div>
+          
           <p>He will surf with me forever, every wave I ride will be with him and every fish that I catch will be with him, by my side, just like he always was.</p> <p class="quote-credit">Jay Reckoff <img src="images/jay-hs.jpg"> </p>
         </div>
       </div>
@@ -286,13 +300,16 @@ $(document).ready(function() {
     <div class="about-teddy-transparent">
         <div class="row">
             <div class="large-12 small-12">
+
               <h1 class="about-teddy-header"> Teddy Waterman, July 4, 1982 — March 11, 2007 </h1>
                   <p>Teddy was unusual. And by that I mean he was extraordinary.</p>
 
                   <p>He was blessed with a last name that encapsulated his most sentient quality – love of the water. He was endowed with remarkable physical beauty and not an ounce of vanity. </p>
 
+                   <div id="about-teddy"></div>
+
                   <p>Teddy walked courageously through dark places. It wasn’t always easy for him to find the light, but he determinedly sought it and found it in his family, his beloved Claire, his surfing and fishing buddies, his students and colleagues, and most of all, in the waters of Galveston Bay and the world’s oceans. </p>
-                  <div id="about-teddy"></div>
+              
 
                   <p> Teddy told my mother, his grandmother Bettye Carpenter, that he was most at peace on the water, that when he was surfing or tooling around the bay in his boat, all the chatter in his head disappeared and he was at one with the universe. It was his meditation; his prayer. </p>
 

@@ -40,8 +40,32 @@ a {
 /* Header Style */
 
 .main-header {
-	height: auto !important;
 	border-bottom: 0.075em solid #fff;
+	position: fixed;
+	width: 100%;
+	background: #2B2B2B;
+	z-index: 20000;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.logo {
+	padding-left: 110px;
+}
+
+.tagline {
+font-family: "source-code-pro",sans-serif !important;
+/* background: #2B2B2B !important; */
+font-weight: 400 !important;
+font-size: 11px !important;
+color: #FFF !important;
+-webkit-font-smoothing: antialiased !important;
+padding-left: 127px;
+text-transform: uppercase;
+}
+
+.about-teddy-new {
+	padding-top: 80px;
 }
 
 /* jslettering header */
@@ -181,7 +205,7 @@ text-transform: uppercase !important;
 /* END HEADER */
 .nav-links {
 	float:right;
-	padding-top: 17px;
+	padding-top: 20px;
 	margin-right: 110px;
 }
 .nav-links a {
@@ -195,6 +219,11 @@ text-transform: uppercase !important;
 }
 
 .nav-links a:hover {
+	border-bottom-color: #11A8A2;
+	padding-bottom: 5px;
+}
+
+.nav-links a:active {
 	border-bottom-color: #11A8A2;
 	padding-bottom: 5px;
 }
