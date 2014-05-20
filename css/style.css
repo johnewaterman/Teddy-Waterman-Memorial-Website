@@ -44,7 +44,7 @@ a {
 	position: fixed;
 	width: 100%;
 	background: #2B2B2B;
-	z-index: 20000;
+	z-index: 500000;
 	padding-top: 7px;
 	padding-bottom: 7px;
 }
