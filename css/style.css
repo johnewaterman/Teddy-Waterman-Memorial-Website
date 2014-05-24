@@ -5,7 +5,6 @@ body {
     font-size: 14px !important;
     color: #FFF !important;
     -webkit-font-smoothing: antialiased !important;
-    overflow-y:hidden;
 }
 
 /*@media (max-width: 500px) {
